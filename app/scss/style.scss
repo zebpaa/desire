@@ -68,6 +68,16 @@
     margin-bottom: 22px;
     padding-left: 30px;
     display: inline-block; // нужен, потому что не сработал margin-bottom, т.к. <a> - это строчный эл-т
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url(../images/envelope.svg);
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 16px;
+      height: 12px;
+    }
   }
   &__form {
     display: flex;
@@ -103,13 +113,54 @@
     margin-left: 100px;
   }
   &__social-link {
-
+    padding-left: 28px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+    }
   }
-  &__social-link,
-  &__menu-link {
+
+  &__social-link--facebook::before {
+    background-image: url(../images/facebook.svg);
+  }
+  &__social-link--instagram::before {
+    background-image: url(../images/instagram.svg);
+    width: 14px;
+    height: 14px;
+    top: 4px;
+  }
+  &__social-link--pinterest::before {
+    background-image: url(../images/pinterest.svg);
+  }
+  &__social-link--whatsapp::before {
+    background-image: url(../images/whatsapp.svg);
+    width: 14px;
+    height: 14px;
+  }
+  &__social-link--youtube::before {
+    background-image: url(../images/youtube.svg);
+    width: 18px;
+    height: 12px;
+    top: 4px;
+  }
+
+  &__social-item,
+  &__menu-item {
     margin-bottom: 15px;
     font-size: 14px;
+    font-weight: 600;
   }
+
+  &__social-link,
+  &__menu-link {
+    color: #707070;
+  }
+
   &__menu {
     margin-right: 60px;
     width: 125px;
