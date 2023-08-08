@@ -252,6 +252,8 @@
 .breadcrumbs {
   background: rgba(#dfdfdf, 0.5);
   padding: 13px 14px;
+  position: relative;
+  z-index: 999;
   &__list {
     display: flex;
   }
@@ -268,6 +270,7 @@
     line-height: 28px;
     color: $default;
   }
+
 }
 
 .top {
@@ -550,11 +553,11 @@
     max-height: 1150px;
     height: 100%;
   }
-  &.gallery-page{
-    .gallery__item img{
+  &.gallery-page {
+    .gallery__item img {
       max-height: 1165px;
     }
-    .gallery__item:nth-child(8){
+    .gallery__item:nth-child(8) {
       grid-column: span 2;
       grid-row: span 2;
     }
@@ -724,13 +727,18 @@
   }
 }
 
-.partners{
+.partners {
   padding: 16px 0 60px;
-  &__items{
+  &__items {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
-  &__item{
+  &__item {
     margin: 0 auto;
   }
+}
+
+.map{
+  margin-top: -53px;
+  margin-bottom: 50px;
 }
