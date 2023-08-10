@@ -1044,7 +1044,8 @@
     margin: 0 6px;
   }
   &__arrow--disabled{
-    display: none;
+    pointer-events: none; // мы будем наводить/нажимать, но срабатывать не будет, сделали так, чтобы не меняла пол-е пагинация
+    opacity: 0;
   }
   &__list-num{
     font-weight: 600;
