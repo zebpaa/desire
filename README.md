@@ -1,4 +1,4 @@
-Адаптивная вёрстка сайта, созданная с помощью сборщика Gulp, препроцессора SCSS
+Адаптивная вёрстка сайта, созданная с помощью сборщика Gulp, препроцессора SCSS и библиотеки jQuery.
 
 Ссылка на макет в Figma:
 https://www.figma.com/file/ABP3qmXEKqPer8Jd9e1Yp5/desire?type=design&node-id=5-0&mode=design&t=uB6okDoxyrw14Ebw-0
